@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>Card News - Portugal Wine</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./images/favicon_wine.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mySwiper {
+            width: 1320px;
+            margin: 130px auto;
+            text-align: center;
+        }
+
+        body {
+            background: url(./images/pg_bg.jpg) no-repeat top center;
+        }
+
+        img {
+            display: inline-block;
+            width: 700px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_01.jpg" alt="p1"></div>
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_02.jpg" alt="p2"></div>
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_03.jpg" alt="p3"></div>
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_04.jpg" alt="p4"></div>
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_05.jpg" alt="p5"></div>
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_06.jpg" alt="p6"></div>
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_07.jpg" alt="p7"></div>
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_08.jpg" alt="p8"></div>
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_09.jpg" alt="p9"></div>
+            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_10.jpg" alt="p10"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
