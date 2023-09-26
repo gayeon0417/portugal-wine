@@ -7,7 +7,7 @@
     <title>Card News - Portugal Wine</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="shortcut icon" href="./images/favicon_wine.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -15,7 +15,7 @@
         }
 
         .mySwiper {
-            width: 1320px;
+            width: 900px;
             margin: 130px auto;
             text-align: center;
         }
@@ -28,6 +28,29 @@
             display: inline-block;
             width: 700px;
         }
+
+        .swiper-pagination>span {
+            background-color: #fff;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff;
+        }
+
+        .swiper-slide {
+            position: relative;
+        }
+
+        .page_indicator {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 30px;
+            color: #fff;
+            position: absolute;
+            top: 7px;
+            right: 110px;
+            width: 60px;
+        }
     </style>
 
 </head>
@@ -35,18 +58,41 @@
 <body>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_01.jpg" alt="p1"></div>
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_02.jpg" alt="p2"></div>
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_03.jpg" alt="p3"></div>
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_04.jpg" alt="p4"></div>
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_05.jpg" alt="p5"></div>
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_06.jpg" alt="p6"></div>
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_07.jpg" alt="p7"></div>
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_08.jpg" alt="p8"></div>
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_09.jpg" alt="p9"></div>
-            <div class="swiper-slide"><img src="./images/jpg/카드뉴스_10.jpg" alt="p10"></div>
+            <div class="swiper-slide">
+                <p class="page_indicator">1/10</p><img src="./images/jpg/cd_news1.jpg" alt="p1">
+            </div>
+            <div class="swiper-slide">
+                <p class="page_indicator">2/10</p><img src="./images/jpg/cd_news2.jpg" alt="p2">
+            </div>
+            <div class="swiper-slide">
+                <p class="page_indicator">3/10</p><img src="./images/jpg/cd_news3.jpg" alt="p3">
+            </div>
+            <div class="swiper-slide">
+                <p class="page_indicator">4/10</p><img src="./images/jpg/cd_news4.jpg" alt="p4">
+            </div>
+            <div class="swiper-slide">
+                <p class="page_indicator">5/10</p><img src="./images/jpg/cd_news5.jpg" alt="p5">
+            </div>
+            <div class="swiper-slide">
+                <p class="page_indicator">6/10</p><img src="./images/jpg/cd_news6.jpg" alt="p6">
+            </div>
+            <div class="swiper-slide">
+                <p class="page_indicator">7/10</p><img src="./images/jpg/cd_news7.jpg" alt="p7">
+            </div>
+            <div class="swiper-slide">
+                <p class="page_indicator">8/10</p><img src="./images/jpg/cd_news8.jpg" alt="p8">
+            </div>
+            <div class="swiper-slide">
+                <p class="page_indicator">9/10</p><img src="./images/jpg/cd_news9.jpg" alt="p9">
+            </div>
+            <div class="swiper-slide">
+                <p class="page_indicator">10/10</p><img src="./images/jpg/cd_news10.jpg" alt="p10">
+            </div>
         </div>
-        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
     </div>
 
     <!-- Swiper JS -->
@@ -57,10 +103,6 @@
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 0,
             centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
